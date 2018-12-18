@@ -1,8 +1,6 @@
 /*
 dfs
 无向图连通分量
-standard problem about connected components in undirected graph
-here use dfs to tranversal the graph 
 */
 #include <iostream>
 
