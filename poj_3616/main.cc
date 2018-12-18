@@ -1,3 +1,8 @@
+/*
+dp
+需先排序并对每个区间的结束时间做处理，即加上休息时间来判断是否会有区间重叠
+dp从1->M计算
+*/
 #include <iostream>
 #include <algorithm>
 
