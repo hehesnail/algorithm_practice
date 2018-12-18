@@ -1,4 +1,5 @@
 /*
+dp
 解法同poj 1163
 */
 #include <iostream>
