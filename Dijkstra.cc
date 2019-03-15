@@ -32,14 +32,15 @@ void dijkstra(int s) {
 	while(!que.empty()) {
 		P p = que.top();
 		que.pop();
-		int v = p.second;
-		if (d[v] < p.first) continue;
+		int v = p.second, dist = p.first;
+		//if (d[v] < p.first) continue;
+		cout << d[v] << " " << p.first << endl;
 		for (int i = 0; i < G[v].size(); i++) {
 			int u = G[v][i].to;
 			int cost = G[v][i].cost;
 
-			if (d[u] > d[v] + cost) {
-				d[u] = d[v] + cost;
+			if (d[u] > dist + cost) {
+				d[u] = dist + cost;
 				pre[u] = v;
 				que.push(P(d[u], u));
 			}
